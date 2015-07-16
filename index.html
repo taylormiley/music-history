@@ -6,74 +6,84 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <title>Nashville Software School</title>
 </head>
-
 <body>
-<div>
-<header>
-  <nav>
-    <ul>
-      <li>View Music</li>
-      <li class="separator">|</li>
-      <li><a href="#">Add Music</a></li>
-      <li class="separator">|</li>
-      <li><a href="#">Profile</a></li>
-    </ul>
-  </nav>
-</header>
-<br>
-
-<form class="leftpanel">
-  <label>Song length:<label>
+  <div class="wrapper">
+  <header>
+    <nav>
+      <ul>
+        <li>View Music</li>
+        <li class="separator">|</li>
+        <li><a href="#">Add Music</a></li>
+        <li class="separator">|</li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+    </nav>
+  </header>
   <br>
-  <input type="range" class:"slider"></input>
-    <br>
-  <label>Artist:</label>
-    <br>
-    <select for="artist">
-      <option>Options</option>
-      <option>a</option>
-      <option>b</option>
-      <option>c</option>
-    </select>
-  <label>Album:</label>
-    <br>
-    <select for="album">
-      <option>Options</option>
-      <option>a</option>
-      <option>b</option>
-      <option>c</option>
-    </select>
-  <label class="genre">Genre:</label>
-    <br>
-    <div class="leftcheck">
-      <input type="checkbox" name="genre" value="Rock">Rock</input>
-      <br>
-      <input type="checkbox" name="genre" value="Pop">Pop</input>
-      <br>
-      <input type="checkbox" name="genre" value="Blues">Blues</input>
-      <br>
-    </div>
-    <div class="rightcheck">    
-      <input class ="right" type="checkbox" name="genre" value="Classical">Classical</input>
-      <br>
-      <input type="checkbox" name="genre" value="Jazz">Jazz</input>
-      <br>
-      <input type="checkbox" name="genre" value="Hip hop">Hip hop</input>
-      <br>
-    </div>
-<center><button class="filterbutton">Filter</button></center>
-</form>
-<article>
-  <section>
-  </section>
-  <section>
-  </section>
-  <section>
-  </section>
-  <section>
-  </section>
+  
+  <div class="inline">  
     
-</article>
-</div>
+  <article class="leftpanel">
+    <label>Song length:</label>
+    <br>
+    <input type="range" class:"slider"></input>
+      <br>
+    <label>Artist:</label>
+      <br>
+      <select for="artist">
+        <option>Options</option>
+        <option>a</option>
+        <option>b</option>
+        <option>c</option>
+      </select>
+    <label>Album:</label>
+      <br>
+      <select for="album">
+        <option>Options</option>
+        <option>a</option>
+        <option>b</option>
+        <option>c</option>
+      </select>
+    <label class="genre">Genre:</label>
+      <br>
+      <div class="leftcheck">
+        <input type="checkbox" name="genre" value="Rock">Rock</input>
+        <br>
+        <input type="checkbox" name="genre" value="Pop">Pop</input>
+        <br>
+        <input type="checkbox" name="genre" value="Blues">Blues</input>
+        <br>
+      </div>
+      <div class="rightcheck">    
+        <input class ="right" type="checkbox" name="genre" value="Classical">Classical</input>
+        <br>
+        <input type="checkbox" name="genre" value="Jazz">Jazz</input>
+        <br>
+        <input type="checkbox" name="genre" value="Hip hop">Hip hop</input>
+        <br/>
+      </div>
+      <center><button class="filterbutton">Filter</button></center>
+  </article>
+  
+  <br>
+  
+  <article id="container" class="rightpanel">
+    <!--<section>
+      <h2>Song Name</h2>
+      <br> 
+      <span class="artistName">Artist name</span>
+      <span class="albumName">Album name</span>
+      <span class="genreName">Genre</span>
+      <br>
+      
+   </section>-->
+      
+    
+  </article>
+  
+  </div>
+  
+  </div>
+  <script src="js-101.js"></script>
 </body>
 </html>
