@@ -4,10 +4,13 @@ nav > ul > li {
 
 header {
   border: 2px solid black;
+  position: fixed;
+  width: 88.5%;
 }
 
 header {
   background-color: #FFB4B0;
+  border: 2px solid black;
 }
 
 .leftpanel {
@@ -46,7 +49,20 @@ label > div {
   margin-left: 30px;
   padding: 10px 20px 20px 20px;
   line-height: 150%;
-  width: 100%
+  width: 100%;
+  
+  }
+
+article section:nth-child(2n+1) {
+  background-color: #F5FFFA;
+}
+
+article section:nth-child(2n+0) {
+  background-color: #FFF5EE;
+}
+
+article section:first-of-type {
+  font-weight: bold;
 }
 
 .albumName {
@@ -62,6 +78,7 @@ article {
 }
 
 .inline {
+  margin-top: 50px;
   display: flex;
 }
 
@@ -76,4 +93,5 @@ span {
 .wrapper {
   width: 90%;
   min-width: 40em;
+  font-family: arial;
 }
