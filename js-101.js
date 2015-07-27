@@ -1,3 +1,61 @@
+$(document).ready(function() {
+
+  $.ajax({
+    url: "main.json"
+  }).done(function(data) {
+    // var contentEl = $("#container");
+    console.log(data);
+    var outputList = document.getElementById("container");
+    for(var i = 0; i < data.songs.length; i++) {
+      var h3 = document.createElement("h3");
+      h3.innerHTML = data.songs[i].name;
+      outputList.appendChild(h3);
+      var span = document.createElement("span");
+      span.innerHTML = data.songs[i].artist;
+      outputList.appendChild(span);
+      var span1 = document.createElement("span");
+      span1.innerHTML = data.songs[i].album;
+      outputList.appendChild(span1);
+    }
+  })
+
+  $("#getData").
+    $.ajax({
+      url: "secondary.json"
+    }).click(function(data) {
+      console.log(data);
+      var outputList = document.getElementById("container");
+      for(var i = 0; i < data.songs.length; i++) {
+        var h3 = document.createElement("h3");
+        h3.innerHTML = data.songs[i].name;
+        outputList.appendChild(h3);
+        var span = document.createElement("span");
+        span.innerHTML = data.songs[i].artist;
+        outputList.appendChild(span);
+        var span1 = document.createElement("span");
+        span1.innerHTML = data.songs[i].album;
+        outputList.appendChild(span1);
+    }
+    })
+
+});  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // var songs = [];
 
 
